@@ -969,7 +969,7 @@ footer {
     }
 }
 
-@media screen and (min-width:1001px) and (max-width:1200px) {
+@media screen and (min-width:1001px) and (max-width:1250px) {
     .mission-image,
     .goals-image {
         display: none;
@@ -1071,4 +1071,196 @@ footer {
 .project-description>p {
     text-align: center;
     font-weight: bold;
+}
+
+.green-fund {
+    margin-top: 4%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.green-fund-line {
+    width: 7%;
+    margin-left: 46%;
+    height: 4px;
+    background-color: #1a8a47;
+}
+
+.green-fund-description {
+    display: flex;
+    width: 100%;
+}
+
+.green-fund-description-paragraph {
+    width: 60%;
+    height: 260px;
+    margin-left: 5%;
+}
+
+.green-fund-description-paragraph>p {
+    margin: 3% 0% 0% 10%;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.green-fund-image {
+    width: 30%;
+}
+
+.green-fund-image>img {
+    margin-top: -2%;
+    width: 100%;
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+.green-politics {
+    margin-top: 0%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.green-politics-line {
+    width: 7%;
+    margin-left: 46%;
+    height: 4px;
+    background-color: #1a8a47;
+}
+
+.green-politics-description {
+    display: flex;
+    width: 100%;
+}
+
+.green-politics-description-paragraph {
+    width: 60%;
+    height: 260px;
+}
+
+.green-politics-description-paragraph>p {
+    margin: 2% 0% 3% 0%;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.green-politics-image {
+    width: 30%;
+}
+
+.green-politics-image>img {
+    margin-top: -12%;
+    margin-left: 5%;
+    width: 100%;
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+@media screen and (max-width:767px) {
+    .our-projects {
+        margin-top: 14%;
+    }
+    .our-projects-line {
+        margin-left: 35%;
+        width: 24%;
+    }
+    .project-div {
+        width: 100%;
+    }
+    .green-fund-image,
+    .green-politics-image {
+        display: none;
+    }
+    .green-fund-description-paragraph,
+    .green-politics-description-paragraph {
+        margin: 2%;
+        width: 100%;
+        height: auto;
+    }
+    .green-fund-description-paragraph>p {
+        margin: 0%;
+    }
+    .green-politics-line {
+        margin-left: 32%;
+        width: 30%;
+    }
+    .green-fund-line {
+        margin-left: 26%;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .our-projects-line {
+        margin-left: 42%;
+        width: 14%;
+    }
+    .project-highlight {
+        margin: 0;
+        padding: 0;
+    }
+    .project-div {
+        width: 45%;
+    }
+    .green-fund-image,
+    .green-politics-image {
+        display: none;
+    }
+    .green-fund-description-paragraph,
+    .green-politics-description-paragraph {
+        margin: 2%;
+        width: 100%;
+        height: auto;
+    }
+    .green-fund-description-paragraph>p {
+        margin: 0%;
+    }
+    .green-politics-line {
+        margin-left: 41%;
+        width: 15%;
+    }
+    .green-fund-line {
+        margin-left: 38%;
+        width: 15%;
+    }
+}
+
+@media screen and (min-width:1001px) and (max-width:1250px) {
+    .our-projects-line {
+        margin-left: 44%;
+        width: 10%;
+    }
+    .project-highlight {
+        margin: 0;
+        padding: 0;
+    }
+    .project-div {
+        width: 32%;
+        margin: 1% 0.5% 0.5% 0.5%;
+    }
+    .green-fund-description-paragraph>p,
+    .green-politics-description-paragraph>p {
+        margin: 2% 0;
+    }
+    .green-fund-description-paragraph,
+    .green-politics-description-paragraph {
+        width: 68%;
+        margin-left: 2%;
+    }
+    .green-politics-description-paragraph {
+        margin-right: 4%;
+        margin-left: -2%;
+    }
+    .green-politics-line {
+        margin-left: 43%;
+        width: 10%;
+    }
+    .green-fund-line {
+        margin-left: 41%;
+        width: 12%;
+    }
+    .green-politics {
+        margin-top: -2%;
+    }
 }
