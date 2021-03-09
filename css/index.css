@@ -19,6 +19,10 @@ body {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+}
+
 .image-div {
     position: absolute;
     width: 100%;
@@ -29,6 +33,14 @@ body {
     animation: cycleImages 31s infinite;
     opacity: 0;
     top: 0px;
+}
+
+.black-foreground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: black;
 }
 
 .image-div:nth-child(1) {
@@ -42,7 +54,7 @@ body {
 }
 
 .image-div:nth-child(3) {
-    background-image: url('../photos/greenTrees.png');
+    background-image: url('../photos/tree_saving.jpg');
     animation-delay: 20s;
 }
 
@@ -151,11 +163,13 @@ body {
 /*home-text */
 
 .company-description {
-    font-family: cursive;
-    color: #fff;
+    font-family: sans-serif;
+    color: rgb(236, 233, 233);
     font-weight: 500;
-    margin: 13% 8% 1% 10%;
-    font-size: 22px;
+    margin: 13% 38% 1% 10%;
+    font-size: 18px;
+    font-weight: 500;
+    position: absolute;
 }
 
 .company-description>span {
@@ -181,11 +195,58 @@ body {
     cursor: pointer;
     font-weight: 600;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* position: absolute;
+    top: 49%; */
 }
 
 .read-more:hover {
     background-color: #1a8a47;
     border: 1px solid #1a8a47;
+}
+
+.green-rwanda {
+    font-size: 20px;
+    margin-top: 2%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.green-rwanda-line {
+    width: 7%;
+    margin-left: 46%;
+    height: 4px;
+    background-color: #1a8a47;
+}
+
+.green-rwanda-description {
+    display: flex;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.green-rwanda-description-paragraph {
+    width: 60%;
+    background-image: url('../photos/mission-background.svg');
+    background-repeat: no-repeat;
+    height: 260px;
+    background-size: 85%;
+    background-position-x: 20%;
+}
+
+.green-rwanda-description-paragraph>p {
+    margin: 6% 16%;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.green-rwanda-image {
+    width: 35%;
+}
+
+.green-rwanda-image>img {
+    margin-top: 8%;
+    width: 80%;
+    height: 200px;
 }
 
 
@@ -467,6 +528,7 @@ footer {
     .company-description {
         margin: 40% 4% 4% 8%;
         font-size: 15px;
+        font-family: 'Poppins', sans-serif;
     }
     .company-description>span {
         font-size: 30px;
@@ -475,6 +537,7 @@ footer {
         text-align: center;
     }
     .read-more {
+        top: 56%;
         padding: 1% 4%;
     }
     .subscribe {
@@ -547,6 +610,7 @@ footer {
     .company-description {
         margin: 20% 4% 1% 8%;
         font-size: 18px;
+        font-family: 'Poppins', sans-serif;
     }
     .company-description>span {
         font-size: 35px;
@@ -554,8 +618,8 @@ footer {
         text-align: center;
     }
     .read-more {
-        padding: 0.5% 1%;
-        font-size: 18px;
+        top: 28%;
+        padding: 1% 4%;
     }
     .subscribe {
         margin: 0;
@@ -646,14 +710,15 @@ footer {
     }
     .company-description {
         margin-top: 15%;
-        font-size: 20px;
+        font-size: 18px;
+        font-family: 'Poppins', sans-serif;
         margin-bottom: 2% !important;
     }
     .company-description>span {
         font-size: 40px;
     }
     .read-more {
-        padding: 0.5% 1.5%;
+        padding: 0.8% 2.4%;
         font-size: 17px;
     }
     footer {
@@ -877,18 +942,21 @@ footer {
 
 @media screen and (max-width:767px) {
     .mission-image,
-    .goals-image {
+    .goals-image,
+    .green-rwanda-image {
         display: none;
     }
     .mission-description-paragraph,
-    .goals-description-paragraph {
+    .goals-description-paragraph,
+    .green-rwanda-description-paragraph {
         width: 100%;
         background: none;
         height: auto;
         margin: 0;
     }
     .mission-description-paragraph>p,
-    .goals-description-paragraph>p {
+    .goals-description-paragraph>p,
+    .green-rwanda-description-paragraph>p {
         padding: 0;
         margin: 2%;
     }
@@ -898,6 +966,10 @@ footer {
     .our-mission-line {
         width: 20%;
         margin-left: 36%;
+    }
+    .green-rwanda-line {
+        margin-left: 32%;
+        width: 24%;
     }
     .our-goals-line {
         width: 20%;
@@ -925,18 +997,21 @@ footer {
 
 @media screen and (min-width:768px) and (max-width:1000px) {
     .mission-image,
-    .goals-image {
+    .goals-image,
+    .green-rwanda-image {
         display: none;
     }
     .mission-description-paragraph,
-    .goals-description-paragraph {
+    .goals-description-paragraph,
+    .green-rwanda-description-paragraph {
         width: 100%;
         background: none;
         height: auto;
         margin: 0;
     }
     .mission-description-paragraph>p,
-    .goals-description-paragraph>p {
+    .goals-description-paragraph>p,
+    .green-rwanda-description-paragraph>p {
         padding: 0;
         margin: 2%;
         font-size: 20px;
@@ -971,18 +1046,21 @@ footer {
 
 @media screen and (min-width:1001px) and (max-width:1250px) {
     .mission-image,
-    .goals-image {
+    .goals-image,
+    .green-rwanda-image {
         display: none;
     }
     .mission-description-paragraph,
-    .goals-description-paragraph {
+    .goals-description-paragraph,
+    .green-rwanda-description-paragraph {
         width: 100%;
         background: none;
         height: auto;
         margin: 0;
     }
     .mission-description-paragraph>p,
-    .goals-description-paragraph>p {
+    .goals-description-paragraph>p,
+    .green-rwanda-description-paragraph>p {
         padding: 0;
         margin: 2%;
         font-size: 20px;
@@ -1284,6 +1362,7 @@ footer {
     display: flex;
     height: auto;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 form {
@@ -1364,6 +1443,12 @@ input[type=submit]:hover {
     padding-top: 2%;
     padding-left: 5%;
     width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contact-us-address>div {
+    width: 100%;
 }
 
 .location {
@@ -1430,4 +1515,98 @@ input[type=submit]:hover {
 
 .phone-info>p {
     font-size: 15px;
+}
+
+@media screen and (max-width:767px) {
+    form {
+        width: 100%;
+        padding: 2%;
+    }
+    .contact-us-div {
+        display: flex;
+        height: auto;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+    .contact-us-address {
+        padding-top: 2%;
+        padding-left: 5%;
+        width: 100%;
+    }
+    .leave-feedback {
+        margin-top: 14%;
+    }
+    .leave-feedback-line {
+        margin-left: 22%;
+        width: 40%;
+    }
+    .form-group:nth-of-type(1) {
+        display: block;
+        width: 100%;
+    }
+    .form-group:nth-of-type(2) {
+        display: inline-block;
+        width: 100%;
+        margin-left: 0%;
+        margin-bottom: 0%;
+    }
+    input[type=submit] {
+        padding: 1.5% 44%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1000px) {
+    form {
+        width: 100%;
+        padding: 2%;
+    }
+    .contact-us-div {
+        display: flex;
+        height: auto;
+        flex-direction: row !important;
+        flex-wrap: wrap;
+    }
+    .contact-us-address {
+        padding-top: 2%;
+        padding-left: 5%;
+        width: 100%;
+    }
+    .contact-us-address>div {
+        width: 40%;
+        margin-right: 5%;
+    }
+    .contact-us-address>div:last-child {
+        margin-left: 30%;
+        margin-top: -3%;
+        margin-bottom: -4%;
+    }
+    .leave-feedback {
+        margin-top: 7%;
+    }
+    .leave-feedback-line {
+        margin-left: 36%;
+        width: 20%;
+    }
+    .form-group:nth-of-type(1) {
+        display: inline-block;
+        width: 50%;
+    }
+    .form-group:nth-of-type(2) {
+        display: inline-block;
+        width: 49%;
+    }
+    input[type=submit] {
+        padding: 1.5% 47%;
+    }
+}
+
+@media screen and (min-width:1001px) and (max-width:1250px) {
+    .form-group:nth-of-type(1) {
+        display: inline-block;
+        width: 50%;
+    }
+    .form-group:nth-of-type(2) {
+        display: inline-block;
+        width: 48%;
+    }
 }
