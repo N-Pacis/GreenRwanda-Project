@@ -245,8 +245,30 @@ a {
 
 .green-rwanda-image>img {
     margin-top: 8%;
-    width: 80%;
-    height: 200px;
+    width: 90%;
+    height: 210px;
+}
+
+.rwanda-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2% 5%;
+}
+
+.rwanda-images>img {
+    width: 30%;
+    object-fit: cover;
+    height: 300px;
+    box-shadow: 2px 2px 10px #ccc;
+    margin: 1%;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform .5s;
+}
+
+.rwanda-images>img:hover {
+    transform: scale(1.025)
 }
 
 
